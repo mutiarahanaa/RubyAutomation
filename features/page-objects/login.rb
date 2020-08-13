@@ -4,7 +4,7 @@ class LoginPage < SitePrism::Page
 
     element :username, :xpath,'//input[@id="email"]'
     element :password, :xpath,'//input[@id="pass"]'
-    element :buttonLogin, :xpath,'//button[@id="u_0_h"]'
+    element :buttonLogin, :xpath, '//button[@name="login"]'
 
     def isFieldLoginPresent()
         sleep 3
