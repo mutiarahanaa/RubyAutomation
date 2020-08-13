@@ -18,3 +18,7 @@ Given /^I navigate to facebook page$/ do
   And /^I fill username with "([^\"]*)" and password with "([^\"]*)"$/ do |username, password|
     @login_search.fillLogin(username,password)
     end
+
+  Then /^I click login$/ do
+    puts @login_search.clickLogin
+  end
