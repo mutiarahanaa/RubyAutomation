@@ -1,6 +1,8 @@
 Feature: Login FB
 
+@test
 Scenario: Login FB
 Given I navigate to facebook page
-And I verify user is in login page
-And I fill username with "anaksini99@gmail.com" and password with "Gameloftqa123"
+When I verify user is in login page
+And I fill username with "adam_vqaiewa_levine@tfbnw.net" and password with "tiaraqa"
+And I click Login
