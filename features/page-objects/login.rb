@@ -15,7 +15,7 @@ class LoginPage < SitePrism::Page
     def fillLogin(username, pass)
         self.username.send_keys(username)
         self.password.send_keys(pass)
-        sleep 5
+        sleep 2
     end
 
     def clickLogin()
