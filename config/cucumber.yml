@@ -1,0 +1,2 @@
+# config/cucumber.yml
+verbose     : cucumber_api_verbose=true
