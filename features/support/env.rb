@@ -5,6 +5,8 @@ require 'selenium-webdriver'
 require 'securerandom'
 require 'site_prism'
 require 'dotenv'
+require 'dotenv/load'
+
 
 Dotenv.load
 
@@ -70,5 +72,6 @@ After do |scenario|
     screenshot_name = "screenshot-#{scenario}-#{timestamp}.png"
     screenshot_path = "#{screenshot_name}"
     Capybara.page.save_screenshot(screenshot_path)
+    puts scenario
   end
 end
